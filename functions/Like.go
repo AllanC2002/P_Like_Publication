@@ -43,7 +43,7 @@ func LikePublication(db *mongo.Database, publicationID string, userID int) (stri
 		return "", http.StatusBadRequest, errors.New("Yo have already liked this publication")
 	}
 
-	return "Like agregado", http.StatusOK, nil
+	return "Like Added like", http.StatusOK, nil
 }
 
 // intToString
